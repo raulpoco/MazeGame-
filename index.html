@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" charset="utf-8"></script>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    body {
+      margin: 0;
+      position: fixed;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    h1 {
+      color: white;
+      font-size: 5rem;
+    }
+
+    .winner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 1;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .btn {
+      border-radius: 20px;
+      color: white;
+      background-color: transparent;
+      font-size: 3rem;
+    }
+
+    .btn:hover {
+      color: black;
+      background-color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="winner hidden">
+    <h1>You Win!</h1>
+    <button class="btn" type="button" name="button">Start again</button>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
